@@ -16,15 +16,13 @@ export const metadata: Metadata = {
 
 type Props = {
   children: ReactNode;
-  params: { locale: string };
 };
 
 export default async function RootLayout({
   children,
-  params: { locale },
 }: Props) {
   return (
-    <html lang={locale}>
+    <html lang="en">
       <body className={`${IBM.className}`}>
         <PageLayout>{children}</PageLayout>
       </body>
