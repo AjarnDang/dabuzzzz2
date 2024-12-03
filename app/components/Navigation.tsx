@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Button, Navbar, Dropdown } from "flowbite-react";
+import BookButton from "./BookButton";
 import Logo from "@/app/assets/logo.png";
 
 export default function Header() {
@@ -32,6 +33,13 @@ export default function Header() {
       mediaQuery.removeEventListener("change", handleScreenSizeChange);
   }, []);
 
+  const handleClick = () => {
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSfR_mYH5BJj-KfgbxiFUzRSyaTaxp99qAOiWoVJubiqtOkuEw/viewform",
+      "_blank"
+    );
+  };
+
   const pathname = usePathname();
   const isAboutPage = pathname === "/about";
 
@@ -57,9 +65,7 @@ export default function Header() {
       </Navbar.Brand>
 
       <div className="flex md:order-2 gap-4">
-        <Button className="rounded-full bg-primary lg:flex md:flex hidden px-3">
-          Book now
-        </Button>
+        <BookButton />
         <Navbar.Toggle className="md:bg-transparent sm:bg-white bg-white cursor-pointer" />
       </div>
 
@@ -148,7 +154,10 @@ export default function Header() {
             Contact
           </span>
         </Navbar.Link>
-        <Button className="rounded-full bg-primary lg:hidden md:hidden sm:flex px-3">
+        <Button
+          onClick={handleClick}
+          className="rounded-full bg-primary lg:hidden md:hidden sm:flex px-3"
+        >
           Book now
         </Button>
       </Navbar.Collapse>

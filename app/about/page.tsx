@@ -3,7 +3,7 @@ import Image from "next/image";
 import HeaderImage from "@/app/assets/Header_Image.png";
 import HeroAbout from "@/app/assets/Hero_About_Page.png";
 import DabuzzzText from "@/app/components/DabuzzzText";
-import { Button } from "flowbite-react";
+import BookButton from "../components/BookButton";
 
 export default function About() {
   return (
@@ -96,7 +96,7 @@ export default function About() {
               </h1>
               <p>MONDAY to SUNDAY</p>
               <p className="mb-4">at 10:00 - 19:00</p>
-              <Button className="rounded-full bg-primary px-4">Book now</Button>
+              <BookButton />
             </div>
           </div>
           <div className="lg:col-span-2 md:col-span-1 col-auto">

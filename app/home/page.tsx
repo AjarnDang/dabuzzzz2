@@ -1,5 +1,5 @@
 import DabuzzzText from "@/app/components/DabuzzzText";
-import { Button } from "flowbite-react";
+import BookButton from "../components/BookButton";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
           <DabuzzzText />
         </h1>
         <div className="w-full flex justify-center mt-4">
-          <Button className="rounded-full bg-primary px-4">Book now</Button>
+          <BookButton />
         </div>
       </div>
     </div>

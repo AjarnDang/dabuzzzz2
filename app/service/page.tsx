@@ -6,7 +6,7 @@ import ImgG1 from "@/app/assets/Image_Group_1.png";
 import ImgG2 from "@/app/assets/Image_Group_2.png";
 import ImgG3 from "@/app/assets/Image_Group_3.png";
 import FooterServiceBg from "@/app/assets/Footer_Service_Page.png";
-import { Button } from "flowbite-react";
+import BookButton from "../components/BookButton";
 
 export default function Service() {
   return (
@@ -175,7 +175,7 @@ export default function Service() {
             </h1>
             <p>Let us help you find your style and make it unforgettable!</p>
             <div className="w-full flex justify-center mt-8">
-              <Button className="rounded-full bg-primary px-4">Book now</Button>
+              <BookButton />
             </div>
           </div>
         </div>
