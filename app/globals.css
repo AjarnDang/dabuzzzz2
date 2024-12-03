@@ -3,19 +3,62 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #36a050;
+  --primary-100: #d7ecdc;
+  --primary-200: #57ee7d;
+  --text: #333333;
+  --white: #fbfbfb;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--white);
+  color: var(--text);
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+.text-primary {
+  color: var(--primary);
+}
+.text-white {
+  color: var(--white);
+}
+
+.absolute-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shadow-theme {
+  box-shadow: 20px 20px rgb(54, 160, 80, 0.45);
+}
+
+.custom-min-h {
+  min-height: calc(100vh - 68px);
+}
+
+.click-bait {
+  background-image: url("./assets/Footer_Service_Page.png");
+  width: 100%;
+  height: auto;
+  background: no-repeat;
+  background-position: center;
+}
+
+:where(.css-dev-only-do-not-override-apn68).ant-modal .ant-modal-content {
+  padding: 0;
+}
+
+@media (max-width: 764px) {
+  .custom-dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
