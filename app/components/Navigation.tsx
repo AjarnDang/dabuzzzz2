@@ -65,7 +65,9 @@ export default function Header() {
       </Navbar.Brand>
 
       <div className="flex md:order-2 gap-4">
-        <BookButton />
+        <div className="lg:flex md:flex sm:hidden hidden">
+          <BookButton />
+        </div>
         <Navbar.Toggle className="md:bg-transparent sm:bg-white bg-white cursor-pointer" />
       </div>
 

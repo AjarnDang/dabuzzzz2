@@ -41,6 +41,7 @@ export default function Gallery() {
             {column.map((item, index) => (
               <div
                 key={index}
+                data-aos="fade-up"
                 onClick={() => openModal(item.src)}
                 className="overflow-hidden rounded-xl hover:shadow-xl transition-all"
               >

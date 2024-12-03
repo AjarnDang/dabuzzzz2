@@ -31,7 +31,7 @@ export default function About() {
             />
           </div>
           <div className="flex items-center lg:col-span-3 lg:justify-start lg:text-start sm:justify-center justify-center sm:text-center text-center">
-            <div>
+            <div data-aos="fade-up">
               <h1 className="text-2xl mb-4 font-medium text-white uppercase">
                 About us -
               </h1>
@@ -46,7 +46,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="relative lg:mt-64 md:mt-24 sm:mt-24 mt-24 mb-16">
+      <section className="relative lg:mt-64 md:mt-24 sm:mt-24 mt-24 mb-16" data-aos="fade-up">
         <h1 className="text-xl font-semibold mb-4">Who we are ?</h1>
         <p className="mb-4">
           Welcome to Dabuzzzz Style Studio, where every cut, color, and style is
@@ -77,7 +77,7 @@ export default function About() {
         </p>
       </section>
 
-      <section className="lg:mb-16 mb-4">
+      <section className="lg:mb-16 mb-4" data-aos="fade-up">
         <div className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-4">
           <div className="lg:col-span-1 md:col-span-1 col-auto">
             <div className="lg:mb-16 mb-16">

@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import DabuzzzText from "@/app/components/DabuzzzText";
 import HeroService from "@/app/assets/Hero_Service_Page.png";
@@ -23,16 +22,19 @@ export default function Service() {
         </section>
         <section className="lg:mb-16 mb-10 text-center flex justify-center w-full">
           <div>
-            <h1 className="lg:text-[6rem] text-[5rem] lg:leading-[8rem] leading-[5rem] text-primary xl:flex lg:block block justify-center font-bold italic items-end">
+            <h1
+              className="lg:text-[6rem] text-[5rem] lg:leading-[8rem] leading-[5rem] text-primary xl:flex lg:block block justify-center font-bold italic items-end"
+              data-aos="fade-up"
+            >
               <DabuzzzText />
-              <div className="xl:flex lg:block md:hidden hidden">
+              <div className="xl:flex lg:block md:hidden hidden" data-aos="fade-up">
                 ’s Services
               </div>
             </h1>
             <i className="lg:hidden md:block block text-primary opacity-50 font-medium text-4xl">
               Services
             </i>
-            <p className="mt-4 lg:mx-24">
+            <p className="mt-4 lg:mx-24" data-aos="fade-up">
               At Dabuzzzz Style Studio, we offer a full range of barber services
               tailored to every style and need. From precision men’s haircuts
               and signature hair setups to bold hair coloring for a fresh look,
@@ -47,7 +49,7 @@ export default function Service() {
 
       <div className="flex-grow">
         <div className="highlight bg-[#E4F5E9] lg:px-60 px-4 py-24">
-          <section className="lg:mb-28 mb-12">
+          <section className="lg:mb-28 mb-12" data-aos="fade-up">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
               <div>
                 <Image
@@ -72,7 +74,10 @@ export default function Service() {
             </div>
           </section>
 
-          <section className="lg:mb-28 lg:block hidden mb-12">
+          <section
+            className="lg:mb-28 lg:block hidden mb-12"
+            data-aos="fade-up"
+          >
             <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
               <div className="flex items-center">
                 <div className="text-right">
@@ -99,7 +104,10 @@ export default function Service() {
             </div>
           </section>
 
-          <section className="lg:mb-28 lg:hidden block mb-12">
+          <section
+            className="lg:mb-28 lg:hidden block mb-12"
+            data-aos="fade-up"
+          >
             <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
               <div>
                 <Image
@@ -126,7 +134,7 @@ export default function Service() {
             </div>
           </section>
 
-          <section className="mb-12">
+          <section className="mb-12" data-aos="fade-up">
             <div className="grid md:grid-cols-3 grid-cols-1 gap-16">
               <div className="md:col-span-2">
                 <Image
@@ -169,7 +177,7 @@ export default function Service() {
         />
 
         <div className="absolute inset-0 flex justify-center items-center">
-          <div className="text-white text-center">
+          <div className="text-white text-center" data-aos="fade-up">
             <h1 className="text-4xl font-bold mb-2">
               The premium services we offer at Dabuzzzz Style Studio.
             </h1>

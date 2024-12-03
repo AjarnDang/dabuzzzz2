@@ -10,12 +10,12 @@ export default function Contact() {
         <i className="text-primary opacity-50 font-medium text-4xl">
           Get in touch with
         </i>
-        <div className="lg:text-[6rem] text-[5rem] lg:leading-[8rem] leading-[5rem] text-primary">
+        <div className="lg:text-[6rem] text-[5rem] lg:leading-[8rem] leading-[5rem] text-primary" data-aos="fade-up">
           <DabuzzzText />
         </div>
       </section>
 
-      <section className="lg:mb-16 mb-12 lg:pr-0 pr-5">
+      <section className="lg:mb-16 mb-12 lg:pr-0 pr-5" data-aos="fade-up">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.3502649129787!2d102.82685467473935!3d16.45779258427942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228bc495fbe2f3%3A0x3c532946901ddbb2!2sDABUZZZZ!5e0!3m2!1sth!2sth!4v1731492729381!5m2!1sth!2sth"
           allowFullScreen={true}
@@ -25,7 +25,7 @@ export default function Contact() {
         ></iframe>
       </section>
 
-      <section>
+      <section data-aos="fade-up">
         <div className="grid lg:grid-cols-2 grid-cols-auto">
           <div className="grid grid-cols-4 md:gap-8 sm:gap-4 gap-3">
             <div className="md:col-span-1 col-span-2 font-semibold">Tel.</div>

@@ -1,13 +1,19 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { ReactNode } from "react";
+import { ReactNode, useEffect  } from "react";
 import Header from "@/app/components/Navigation";
 import FooterMain from "@/app/components/Footer";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 export default function PageLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const isHomePage = pathname === "/home" || pathname === "/";
+
+  useEffect(() => {
+    AOS.init({ duration: 600 });
+  }, []);
 
   return (
     <div className={isHomePage ? "bg-[#F4F8F3]" : ""}>

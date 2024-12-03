@@ -23,14 +23,14 @@ export default function Testimonials() {
         </div>
         <div>
           <section className="mb-12">
-            <i className="text-primary opacity-50 font-medium text-4xl">
+            <i className="text-primary opacity-50 font-medium text-4xl" data-aos="fade-up">
               What they say about
             </i>
-            <div className="lg:text-[6rem] text-[5rem] lg:leading-[6rem] leading-[5rem] text-primary">
+            <div className="lg:text-[6rem] text-[5rem] lg:leading-[6rem] leading-[5rem] text-primary" data-aos="fade-up">
               <DabuzzzText />
             </div>
           </section>
-          <section className="h-[40rem] min-h-96 overflow-y-scroll">
+          <section className="h-[40rem] min-h-96 overflow-y-scroll" data-aos="fade-up">
             {reviews.map((item, index) => (
               <figure
                 key={index}
