@@ -9,7 +9,7 @@ export default function Home() {
         <h1 className="lg:text-[10rem] text-[5rem] lg:leading-[12rem] text-primary" data-aos="fade-up">
           <DabuzzzText />
         </h1>
-        <div className="w-full flex justify-center mt-4" data-aos="fade-up">
+        <div className="w-full flex justify-center mt-4">
           <BookButton />
         </div>
       </div>

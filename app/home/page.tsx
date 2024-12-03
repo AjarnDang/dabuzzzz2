@@ -16,7 +16,7 @@ export default function Home() {
         >
           <DabuzzzText />
         </h1>
-        <div className="w-full flex justify-center mt-4" data-aos="fade-up">
+        <div className="w-full flex justify-center mt-4">
           <BookButton />
         </div>
       </div>
