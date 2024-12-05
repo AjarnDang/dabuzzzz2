@@ -11,7 +11,7 @@ export default function FooterMain() {
     <Footer
       container
       className={`shadow-none rounded-none ${
-        isHomePage ? "absolute bottom-0 bg-transparent border-none " : "border-t border-gray-200"
+        isHomePage ? "bg-transparent border-none " : "border-t border-gray-200"
       }`}
     >
       <Footer.Copyright

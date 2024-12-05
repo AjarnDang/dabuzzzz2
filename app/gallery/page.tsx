@@ -35,7 +35,7 @@ export default function Gallery() {
           <DabuzzzText />
         </div>
       </section>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4">
         {columns.map((column, colIndex) => (
           <div key={colIndex} className="grid gap-4">
             {column.map((item, index) => (
@@ -43,10 +43,10 @@ export default function Gallery() {
                 key={index}
                 data-aos="fade-up"
                 onClick={() => openModal(item.src)}
-                className="overflow-hidden rounded-xl hover:shadow-xl transition-all"
+                className="overflow-hidden rounded-xl hover:shadow-xl transition-all md:h-auto h-80"
               >
                 <img
-                  className="h-full max-w-full object-cover object-center cursor-pointer hover:scale-110 transition-all duration-200"
+                  className="md:h-full max-w-full object-cover object-center cursor-pointer hover:scale-110 transition-all duration-200"
                   src={item.src}
                   alt={`Haircut ${index + 1}`}
                 />

@@ -1,11 +1,11 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { ReactNode, useEffect  } from "react";
+import { ReactNode, useEffect } from "react";
 import Header from "@/app/components/Navigation";
 import FooterMain from "@/app/components/Footer";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 export default function PageLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
@@ -23,7 +23,7 @@ export default function PageLayout({ children }: { children: ReactNode }) {
           !isHomePage ? "lg:pt-28 pt-24" : ""
         }`}
       >
-        <div>{children}</div>
+        {children}
       </div>
       <FooterMain />
     </div>
