@@ -43,10 +43,10 @@ export default function Gallery() {
                 key={index}
                 data-aos="fade-up"
                 onClick={() => openModal(item.src)}
-                className="overflow-hidden rounded-xl hover:shadow-xl transition-all md:h-auto h-80"
+                className="overflow-hidden rounded-xl hover:shadow-xl transition-all md:h-auto h-96 w-full"
               >
                 <img
-                  className="md:h-full max-w-full object-cover object-center cursor-pointer hover:scale-110 transition-all duration-200"
+                  className="md:h-full w-full object-cover object-center cursor-pointer hover:scale-110 transition-all duration-200"
                   src={item.src}
                   alt={`Haircut ${index + 1}`}
                 />

@@ -165,7 +165,7 @@ export default function Service() {
         </div>
       </div>
 
-      <div className="click-bait relative w-full min-h-80 lg:h-96">
+      <div className="click-bait relative w-full min-h-96 lg:h-96">
         <Image
           src={FooterServiceBg}
           alt="Footer Service Background"
