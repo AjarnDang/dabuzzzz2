@@ -9,7 +9,7 @@ import BookButton from "../components/BookButton";
 
 export default function Service() {
   return (
-    <div>
+    <>
       <div className="flex-grow py-4 lg:px-60 px-4">
         <section className="lg:mb-16 mb-10">
           <Image
@@ -188,6 +188,6 @@ export default function Service() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

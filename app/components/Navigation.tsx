@@ -87,17 +87,39 @@ export default function Header() {
             Home
           </span>
         </Navbar.Link>
-        <Navbar.Link href="/service">
-          <span
-            className={`${
-              isAboutPage && !scrolled && !isMediumScreen
-                ? "text-slate-50"
-                : "text-gray-800"
-            } cursor-pointer`}
+        <Dropdown
+            arrowIcon={true}
+            inline
+            label="Services"
+            className="md:w-auto sm:w-full w-full"
           >
-            Services
-          </span>
-        </Navbar.Link>
+            <Dropdown.Item>
+              <Navbar.Link href="/service">
+                <span
+                  className={`${
+                    isAboutPage && !scrolled && !isMediumScreen
+                      ? "text-gray-800"
+                      : ""
+                  } cursor-pointer`}
+                >
+                  What we provided
+                </span>
+              </Navbar.Link>
+            </Dropdown.Item>
+            {/* <Dropdown.Item>
+              <Navbar.Link href="/service/servicesMenu">
+                <span
+                  className={`${
+                    isAboutPage && !scrolled && !isMediumScreen
+                      ? "text-gray-800"
+                      : ""
+                  } cursor-pointer`}
+                >
+                  Our Services
+                </span>
+              </Navbar.Link>
+            </Dropdown.Item> */}
+          </Dropdown>
         <Navbar.Link href="/gallery">
           <span
             className={`${
