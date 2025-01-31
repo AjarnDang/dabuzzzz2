@@ -87,6 +87,7 @@ export default function Header() {
             Home
           </span>
         </Navbar.Link>
+        <div className="custom-dropdown w-full md:w-auto flex justify-center cursor-pointer">
         <Dropdown
             arrowIcon={true}
             inline
@@ -120,6 +121,7 @@ export default function Header() {
               </Navbar.Link>
             </Dropdown.Item> */}
           </Dropdown>
+          </div>
         <Navbar.Link href="/gallery">
           <span
             className={`${
